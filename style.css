@@ -1,0 +1,179 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container */
+.container {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description */
+p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Input section */
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+/* Input box */
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* Add button */
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #4c5fd5;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+/* Individual task */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f2f2f2;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Completed task */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    cursor: pointer;
+}
+
+/* Delete button */
+li button {
+    background: #e74c3c;
+}
+
+li button:hover {
+    background: #c0392b;
+}
+/* Edit button */
+.edit-btn {
+    background: #3498db;
+    margin-left: 5px;
+}
+
+.edit-btn:hover {
+    background: #2980b9;
+}
+
+/* Delete button */
+.delete-btn {
+    background: #e74c3c;
+    margin-left: 5px;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+#taskCount {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+#clearCompleted {
+    margin-top: 15px;
+    background: #e67e22;
+}
+
+#clearCompleted:hover {
+    background: #d35400;
+}
+
+/* Mobile responsive design */
+@media (max-width: 450px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .input-section {
+        flex-wrap: wrap;
+    }
+
+    input {
+        min-width: 0;
+    }
+
+}
+/* Mobile responsive design */
+@media (max-width: 450px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .input-section {
+        flex-wrap: wrap;
+    }
+
+    input {
+        min-width: 0;
+    }
+
+    li {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    li span {
+        flex: 1;
+    }
+
+}
